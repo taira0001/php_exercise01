@@ -6,11 +6,10 @@ $score_math = trim(fgets(STDIN));
 echo '$score_englishの値を入力して下さい: ';
 $score_english = trim(fgets(STDIN));
 
-if ($score_math >= 80 && $score_english >= 80) {
+if ($score_math >= 60 && $score_english >= 60) {
     echo '合格です';
-} elseif ($score_math >= 70 && $score_english >= 50) {
+} elseif ($score_math < 60 && $score_english < 60) {
     echo '再試験';
-} else{
+} else {
     echo '不合格';
 }
-
